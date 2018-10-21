@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 
 
-
+    <script src="jogo.js"></script>
     <meta charset="utf-8">
     <title></title>
 </head>
@@ -17,18 +17,19 @@
 
 
         <div class="center">
-            <div id="a1"></div>
-            <div id="a2"></div>
-            <div id="a3"></div>
+            <div id="a1" onclick="a1 = 1; mudaCor()"></div>
+            <div id="a2" onclick="a2 = 1; mudaCor()"></div>
+            <div id="a3" onclick="a3 = 1; mudaCor()"></div>
             <br>
-            <div id="b1"></div>
-            <div id="b2"></div>
-            <div id="b3"></div>
+            <div id="b1" onclick="b1 = 1; mudaCor()"></div>
+            <div id="b2" onclick="b2 = 1; mudaCor()"></div>
+            <div id="b3" onclick="b3 = 1; mudaCor()"></div>
             <br>
-            <div id="c1"></div>
-            <div id="c2"></div>
-            <div id="c3"></div>
+            <div id="c1" onclick="c1 = 1; mudaCor()"></div>
+            <div id="c2" onclick="c2 = 1; mudaCor()"></div>
+            <div id="c3" onclick="c3 = 1; mudaCor()"></div>
         </div>
+        <button id="reset" onclick="reset()">reset</button>
 
     </div>
 
