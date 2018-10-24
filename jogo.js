@@ -146,12 +146,12 @@ function reset(){
 
 function checar(vetor){
     var flag = 0;
-    for(var i=0,j=0;j<ganhar.length;j++) {
-        for(var c=0;c<ganhar[j].length;c++) {
+    for(var i=0,l=0;l<ganhar.length;l++) {
+        for(var c=0;c<ganhar[l].length;c++) {
             for(var r=0;r<vetor.length;r++) {
-                if (ganhar[j][c] === vetor[r] && ++i===3 && (j%2)===0) {
+                if (ganhar[l][c] === vetor[r] && ++i===3 && (j%2)===0) {
                     flag=1;   
-                } else if (ganhar[j][c] === vetor[r] && i===3){
+                } else if (ganhar[l][c] === vetor[r] && i===3){
                     flag=2;
                 }
             }
@@ -159,10 +159,10 @@ function checar(vetor){
         i=0;
     }
     if(flag==1) {
-        alert("X ganhou!!");
+        alert("O ganhou!!");
         reset();
     } else if(flag==2){
-        alert("O ganhou!!");
+        alert("X ganhou!!");
         reset();
     }
 }
