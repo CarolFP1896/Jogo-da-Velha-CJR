@@ -159,10 +159,10 @@ function checar(vetor){
         i=0;
     }
     if(flag==1) {
-        alert("O ganhou!!");
+        alert("X ganhou!!");
         reset();
     } else if(flag==2){
-        alert("X ganhou!!");
+        alert("O ganhou!!");
         reset();
     }
 }
