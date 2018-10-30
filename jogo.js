@@ -185,7 +185,6 @@ function confere(){
     //         reset();
     //     }
     // }
-
     // reset();
 }
 
