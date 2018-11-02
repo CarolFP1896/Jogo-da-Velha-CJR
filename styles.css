@@ -1,11 +1,21 @@
-.wrapper{
+.gameBox {
+    background-image: url(img/LvQA7e.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:100%;
+	border: 6px double black;
+	padding-top: 30px;
+}
+
+.wrapper {
     width:100%;
+    padding-bottom: 30px;
 }
 
 .center {
     padding-top: 100px;
     margin: auto;
-    width: 38%;
+    width: 25%;
 
 }
 
@@ -13,7 +23,6 @@ img{
     display: inline-block;
     padding: 0px;
     margin: 0px;
-
     float:right;
 }
 
@@ -26,6 +35,10 @@ img{
     margin: 0px;
 }
 
+#a1:hover {
+    background-color:  #69dac9;
+}
+
 #a2 {
     height: 150px;
     width: 150px;
@@ -36,6 +49,10 @@ img{
     margin: 0px;
 }
 
+#a2:hover {
+    background-color:  #69dac9;
+}
+
 #a3 {
     height: 150px;
     width: 150px;
@@ -43,6 +60,10 @@ img{
     border-left: solid 1px;
     display: inline-block;
     margin: 0px;
+}
+
+#a3:hover {
+    background-color: #69dac9;
 }
 
 #b1 {
@@ -55,12 +76,20 @@ img{
     margin: 0px;
 }
 
+#b1:hover {
+    background-color:  #69dac9;
+}
+
 #b2 {
     height: 150px;
     width: 150px;
     border: solid 1px;
     display: inline-block;
     margin: 0px;
+}
+
+#b2:hover {
+    background-color:  #69dac9;
 }
 
 #b3 {
@@ -73,6 +102,10 @@ img{
     margin: 0px;
 }
 
+#b3:hover {
+    background-color:  #69dac9;
+}
+
 #c1 {
     height: 150px;
     width: 150px;
@@ -81,6 +114,11 @@ img{
     display: inline-block;
     margin: 0px;
 }
+
+#c1:hover {
+    background-color:  #69dac9;
+}
+
 #c2 {
     height: 150px;
     width: 150px;
@@ -90,6 +128,11 @@ img{
     display: inline-block;
     margin: 0px;
 }
+
+#c2:hover {
+    background-color:  #69dac9;
+}
+
 #c3 {
     height: 150px;
     width: 150px;
@@ -98,14 +141,28 @@ img{
     display: inline-block;
     margin: 0px;
 }
+
+#c3:hover {
+    background-color:  #69dac9;
+}
+
 img{
     width: 100%;
     height: 100%;
 }
 
 #reset {
-    margin-top: 10vh;
-    width: 80%;
+    background-color: #69dac9;
+    color: darkslategray;
+    border: 2px double darkslategray;
+	margin-top: 10vh;
+	width: 40%;
+	margin-left: 30%;
+}
+
+#reset:hover {
+    background-color: #347a70;
+    color: aquamarine;
 }
 
 .box{

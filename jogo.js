@@ -1,10 +1,12 @@
 let j=1;
 let mat=[];
+// variaveis para contar as vitorias de x ou de o
 var win_x = 0;
 var win_o = 0;
 mat[0]=[];
 mat[1]=[];
 mat[2]=[];
+//array para armazenar as jogadas
 var jogadas = [];
 function mudaCor(){
         let c;
@@ -12,12 +14,13 @@ function mudaCor(){
         let y = x[0].getElementsByTagName("div");
         if (a1==1){
             if (j%2==0) {
-                y[0].style.backgroundImage="url('img/o.png')";
+                y[0].style.backgroundImage="url('img/o1.png')";
                 mat[0][0]='o';
+                //bota uma jogada no vetor
                 jogadas.push(1);
             }
             else{
-                y[0].style.backgroundImage="url('img/x.png')";
+                y[0].style.backgroundImage="url('img/x1.png')";
                 mat[0][0]='x';
                 jogadas.push(1);
             }
@@ -26,12 +29,12 @@ function mudaCor(){
         }
         if (a2==1){
             if (j%2==0) {
-                y[1].style.backgroundImage="url('img/o.png')";
+                y[1].style.backgroundImage="url('img/o1.png')";
                 mat[0][1]='o';
                 jogadas.push(1);
             }
             else{
-                y[1].style.backgroundImage="url('img/x.png')";
+                y[1].style.backgroundImage="url('img/x1.png')";
                 mat[0][1]='x';
                 jogadas.push(1);
             }
@@ -40,12 +43,12 @@ function mudaCor(){
         }
         if (a3==1){
             if (j%2==0) {
-                y[2].style.backgroundImage="url('img/o.png')";
+                y[2].style.backgroundImage="url('img/o1.png')";
                 mat[0][2]='o';
                 jogadas.push(1);
             }
             else{
-                y[2].style.backgroundImage="url('img/x.png')";
+                y[2].style.backgroundImage="url('img/x1.png')";
                 mat[0][2]='x';
                 jogadas.push(1);
             }
@@ -54,12 +57,12 @@ function mudaCor(){
         }
         if (b1==1){
             if (j%2==0) {
-                y[3].style.backgroundImage="url('img/o.png')";
+                y[3].style.backgroundImage="url('img/o1.png')";
                 mat[1][0]='o';
                 jogadas.push(1);
             }
             else{
-                y[3].style.backgroundImage="url('img/x.png')";
+                y[3].style.backgroundImage="url('img/x1.png')";
                 mat[1][0]='x';
                 jogadas.push(1);
             }
@@ -68,12 +71,12 @@ function mudaCor(){
         }
         if (b2==1){
             if (j%2==0) {
-                y[4].style.backgroundImage="url('img/o.png')";
+                y[4].style.backgroundImage="url('img/o1.png')";
                 mat[1][1]='o';
                 jogadas.push(1);
             }
             else{
-                y[4].style.backgroundImage="url('img/x.png')";
+                y[4].style.backgroundImage="url('img/x1.png')";
                 mat[1][1]='x';
                 jogadas.push(1);
             }
@@ -82,12 +85,12 @@ function mudaCor(){
         }
         if (b3==1){
             if (j%2==0) {
-                y[5].style.backgroundImage="url('img/o.png')";
+                y[5].style.backgroundImage="url('img/o1.png')";
                 mat[1][2]='o';
                 jogadas.push(1);
             }
             else{
-                y[5].style.backgroundImage="url('img/x.png')";
+                y[5].style.backgroundImage="url('img/x1.png')";
                 mat[1][2]='x';
                 jogadas.push(1);
             }
@@ -96,12 +99,12 @@ function mudaCor(){
         }
         if (c1==1){
             if (j%2==0) {
-                y[6].style.backgroundImage="url('img/o.png')";
+                y[6].style.backgroundImage="url('img/o1.png')";
                 mat[2][0]='o';
                 jogadas.push(1);
             }
             else{
-                y[6].style.backgroundImage="url('img/x.png')";
+                y[6].style.backgroundImage="url('img/x1.png')";
                 mat[2][0]='x';
                 jogadas.push(1);
             }
@@ -110,12 +113,12 @@ function mudaCor(){
         }
         if (c2==1){
             if (j%2==0) {
-                y[7].style.backgroundImage="url('img/o.png')";
+                y[7].style.backgroundImage="url('img/o1.png')";
                 mat[2][1]='o';
                 jogadas.push(1);
             }
             else{
-                y[7].style.backgroundImage="url('img/x.png')";
+                y[7].style.backgroundImage="url('img/x1.png')";
                 mat[2][1]='x';
                 jogadas.push(1);
             }
@@ -124,12 +127,12 @@ function mudaCor(){
         }
         if (c3==1){
             if (j%2==0) {
-                y[8].style.backgroundImage="url('img/o.png')";
+                y[8].style.backgroundImage="url('img/o1.png')";
                 mat[2][2]='o';
                 jogadas.push(1);
             }
             else{
-                y[8].style.backgroundImage="url('img/x.png')";
+                y[8].style.backgroundImage="url('img/x1.png')";
                 mat[2][2]='x';
                 jogadas.push(1);
             }
@@ -148,6 +151,7 @@ function mudaCor(){
             win_o++;
             document.getElementById("o").innerHTML = win_o;
             reset();
+        // se a quantidade de jogadas for igual a 9 deu velha
         } else if (jogadas.length == 9) {
             alert("Deu velha!");
             reset();
@@ -185,7 +189,6 @@ function confere(){
     //         reset();
     //     }
     // }
-
     // reset();
 }
 
@@ -207,7 +210,7 @@ function reset(){
     }
     jogadas = [];
 }
-
+//funcao para resetar o placar
 function resetPlacar() {
     win_o = 0;
     win_x = 0;
