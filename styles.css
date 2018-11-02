@@ -1,10 +1,11 @@
 .gameBox {
-    background-image: url(img/LvQA7e.jpg);
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size:100%;
-	border: 6px double black;
-	padding-top: 30px;
+    /* classe que contem a imagem de fundo */
+    background-image: url(img/LvQA7e.jpg); /* link para a imagem de fundo */
+    background-attachment:fixed;    /**************************/
+    background-repeat:no-repeat;    /* mostrando a imagem apenas uma vez */
+    background-size:100%;           /* especificando que a imagem permanece fixa (nao possui modo scroll) */
+	border: 6px double black;     /* definindo borda da imagem de fundo */
+	padding-top: 30px;              /* definindo o espacamento */
 }
 
 .wrapper {
@@ -16,7 +17,6 @@
     padding-top: 100px;
     margin: auto;
     width: 25%;
-
 }
 
 img{
@@ -36,6 +36,7 @@ img{
 }
 
 #a1:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color:  #69dac9;
 }
 
@@ -50,6 +51,7 @@ img{
 }
 
 #a2:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color:  #69dac9;
 }
 
@@ -63,6 +65,7 @@ img{
 }
 
 #a3:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color: #69dac9;
 }
 
@@ -77,6 +80,7 @@ img{
 }
 
 #b1:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color:  #69dac9;
 }
 
@@ -89,6 +93,7 @@ img{
 }
 
 #b2:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */   
     background-color:  #69dac9;
 }
 
@@ -103,6 +108,7 @@ img{
 }
 
 #b3:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color:  #69dac9;
 }
 
@@ -116,6 +122,7 @@ img{
 }
 
 #c1:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color:  #69dac9;
 }
 
@@ -130,6 +137,7 @@ img{
 }
 
 #c2:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color:  #69dac9;
 }
 
@@ -143,6 +151,7 @@ img{
 }
 
 #c3:hover {
+    /* seleciona o espaco que sera selecionado ao passar o mouse em cima */
     background-color:  #69dac9;
 }
 
@@ -152,6 +161,7 @@ img{
 }
 
 #reset {
+    /* definicoes do botao de reset */
     background-color: #69dac9;
     color: darkslategray;
     border: 2px double darkslategray;
@@ -161,11 +171,13 @@ img{
 }
 
 #reset:hover {
+    /* seleciona o botao ao passar o mouse em cima */
     background-color: #347a70;
     color: aquamarine;
 }
 
-.box{
+.box {
+    /* definicoes do placar do jogo */
     border: solid 1px black;
     height: 10vh;
     width: 5vw;
