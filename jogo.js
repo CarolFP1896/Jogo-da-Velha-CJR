@@ -1,10 +1,12 @@
 let j=1;
 let mat=[];
+// variaveis para contar as vitorias de x ou de o
 var win_x = 0;
 var win_o = 0;
 mat[0]=[];
 mat[1]=[];
 mat[2]=[];
+//array para armazenar as jogadas
 var jogadas = [];
 function mudaCor(){
         let c;
@@ -14,6 +16,7 @@ function mudaCor(){
             if (j%2==0) {
                 y[0].style.backgroundImage="url('img/o1.png')";
                 mat[0][0]='o';
+                //bota uma jogada no vetor
                 jogadas.push(1);
             }
             else{
@@ -148,6 +151,7 @@ function mudaCor(){
             win_o++;
             document.getElementById("o").innerHTML = win_o;
             reset();
+            // se a quantidade de jogadas for igual a 9 deu velha
         } else if (jogadas.length == 9) {
             alert("Deu velha!");
             reset();
@@ -206,7 +210,7 @@ function reset(){
     }
     jogadas = [];
 }
-
+//funcao para resetar o placar
 function resetPlacar() {
     win_o = 0;
     win_x = 0;
